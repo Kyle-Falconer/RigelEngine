@@ -2324,7 +2324,7 @@ static void stbi__idct_simd(stbi_uc *out, int out_stride, short data[64])
    row7 = _mm_load_si128((const __m128i *) (data + 7*8));
 
    // column pass
-   dct_pass(bias_0, 10);
+   dct_pass(bias_0, 10)
 
    {
       // 16bit 8x8 transpose pass 1
@@ -2347,7 +2347,7 @@ static void stbi__idct_simd(stbi_uc *out, int out_stride, short data[64])
    }
 
    // row pass
-   dct_pass(bias_1, 17);
+   dct_pass(bias_1, 17)
 
    {
       // pack

@@ -34,6 +34,7 @@ using PixelBuffer = std::vector<Pixel>;
  */
 class Image {
 public:
+  Image();
   Image(PixelBuffer&& pixels, std::size_t width, std::size_t height);
   Image(const PixelBuffer& pixels, std::size_t width, std::size_t height);
   Image(std::size_t width, std::size_t height);
